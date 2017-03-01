@@ -5,13 +5,15 @@ import { RedditReaderApp } from './app.component';
 import { PostsPage } from '../pages/posts/posts';
 import { CommentsPage } from '../pages/comments/comments'
 import { CommentsList } from '../pages/comments/commentsList/commentsList'
+import { FavoritesPage } from '../pages/favorites/favorites'
 
 @NgModule({
   declarations: [
     RedditReaderApp,
     PostsPage,
     CommentsPage,
-    CommentsList
+    CommentsList,
+    FavoritesPage
   ],
   imports: [
     IonicModule.forRoot(RedditReaderApp),
@@ -21,7 +23,8 @@ import { CommentsList } from '../pages/comments/commentsList/commentsList'
   entryComponents: [
     RedditReaderApp,
     PostsPage,
-    CommentsPage
+    CommentsPage,
+    FavoritesPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
